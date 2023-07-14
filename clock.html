@@ -6,12 +6,9 @@
     <title>Clock</title>
 
     <style>
-
-
-        /*CSS RESETS*/
+/*CSS RESETS*/
 
 body, html {
-    height: 100%;
     background: #091735;
 }
 
@@ -35,20 +32,13 @@ h1 {
 }
 
 .card {
-    padding: 10px 50px 10px 50px;
-    border-radius: 10px;
-    background: #091735;
     color: #15bceb;
     display: inline-block;
 }
 
-.card:hover {
-    margin-top: 2px;
-    box-shadow: none;
-}
-
 .clock {
     display: inline-block;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 2em;
     padding-left: 20px;
@@ -67,21 +57,16 @@ h1 {
 .date {
     display: inline-block;
     min-width: 162px;
-    padding-right: 30px;
-    border-right: 2px solid #15bceb;
+    font-family: 'Roboto', sans-serif;
     font-size: 2em;
 }
-
-     
-
-
-
-
     </style>
 </head>
 <body>
 
-<div class="full-table">
+<!--<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700" rel="stylesheet">-->
+
+  <div class="full-table">
   <div class="table-cell">
     
     <div class="card">
@@ -102,7 +87,6 @@ h1 {
 
 
 <script>
-
 function date() {
     var today = new Date();
     document.getElementById('date').innerHTML = today.toDateString();
@@ -145,7 +129,6 @@ function dateTime() {
 
 dateTime()
 // END
-
 </script>
 
 </body>
